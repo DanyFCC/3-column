@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  width: 250px;
+  border-radius: 0.75em 0 0 0.75em;
+  height: auto;
+  padding: 2em;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  width: 250px;
+  height: auto;
+  padding: 2em;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 250px;
+  height: auto;
+  border-radius: 0 0.75em 0.75em 0;
+  padding: 2em;
+}
+
+.paragraph {
+  text-align: justify;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 15em;
+  font-size: 0.8em;
+  padding-left: 20px;
+}
+
+button {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 550;
+
+  margin-bottom: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+  border: 0.1em solid;
+}
+
+.bt1 {
+  border-radius: 2rem;
+  color: hsl(31, 77%, 52%);
+  border-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bt2 {
+  border-radius: 2rem;
+  color: hsl(184, 100%, 22%);
+  border-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bt3 {
+  border-radius: 2rem;
+  color: hsl(179, 100%, 13%);
+  border-color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Big Shoulders Display", cursive;
+
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.car {
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .sedan {
+    border-radius: 0.75em 0.75em 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 0.75em 0.75em;
+  }
+
+  .paragraph {
+    padding: 0.6em 0em;
+  }
+}
